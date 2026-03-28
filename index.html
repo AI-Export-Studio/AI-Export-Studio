@@ -14,7 +14,9 @@
             --black: #0a0a0a;
             --gray-900: #111827;
             --gray-700: #374151;
+            --gray-600: #4B5563;
             --gray-500: #6B7280;
+            --gray-400: #9CA3AF;
             --gray-300: #D1D5DB;
             --gray-200: #E5E7EB;
             --gray-100: #F3F4F6;
@@ -23,6 +25,7 @@
             --accent: #3B82F6; /* Rich Blue */
             --accent-gradient: linear-gradient(135deg, #3B82F6, #8B5CF6);
             --gold-gradient: linear-gradient(135deg, #F59E0B, #EF4444);
+            --brand-gold: #F59E0B;
         }
 
         html { scroll-behavior: smooth; }
@@ -711,8 +714,8 @@
         </div>
         <div class="nav-links">
             <a href="#features">Features</a>
-            <a href="https://chromewebstore.google.com/detail/ai-export-pro-chatgpt-gemini/edofnfpkibomofihnbbhjjhifcjhiofc" target="_blank" style="display: flex; align-items: center; gap: 6px;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Google_Chrome_icon_%28February_2022%29.svg" width="14" height="14">
+            <a href="https://chromewebstore.google.com/detail/ai-export-pro-chatgpt-gemini/edofnfpkibomofihnbbhjjhifcjhiofc" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 6px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Google_Chrome_icon_%28February_2022%29.svg" width="14" height="14" alt="Chrome Web Store">
                 Chrome Store
             </a>
             <a href="#pricing-section" class="nav-cta">Get Lifetime Deal</a>
@@ -807,8 +810,8 @@
 
             <div class="currency-row">
                 <span class="cur-label active" id="label-inr">INR</span>
-                <label class="switch">
-                    <input type="checkbox" id="currencyToggle">
+                <label class="switch" for="currencyToggle">
+                    <input type="checkbox" id="currencyToggle" aria-label="Toggle currency between INR and USD">
                     <span class="slider"></span>
                 </label>
                 <span class="cur-label" id="label-usd">USD</span>
@@ -830,7 +833,7 @@
                         <li><span>Custom Branding (No Watermark)</span></li>
                         <li><span>Support for 3 Devices</span></li>
                     </ul>
-                    <a href="#" class="plan-btn outline" id="btn-monthly" target="_blank">Subscribe Monthly</a>
+                    <a href="javascript:void(0)" class="plan-btn outline" id="btn-monthly" target="_blank">Subscribe Monthly</a>
                 </div>
 
                 <!-- LIFETIME -->
@@ -849,7 +852,7 @@
                         <li><span>VIP Support + Early Access</span></li>
                         <li style="color: var(--brand-gold); font-weight: 800; border: none; padding-top: 10px;">✨ Launch Discount Applied</li>
                     </ul>
-                    <a href="#" class="plan-btn dark" id="btn-lifetime" target="_blank">Get Lifetime Deal</a>
+                    <a href="javascript:void(0)" class="plan-btn dark" id="btn-lifetime" target="_blank">Get Lifetime Deal</a>
                 </div>
             </div>
 
@@ -884,11 +887,12 @@
     <footer>
         <div class="footer-logo brand-text-glow">Ai Export Pro</div>
         <div class="footer-links" style="margin-bottom: 80px;">
-            <a href="https://razorpay.me/@aiexportpro" target="_blank">Support via UPI (India)</a>
-            <a href="https://ko-fi.com/aiexportpro" target="_blank">Buy me a Coffee (Global)</a>
+            <a href="https://razorpay.me/@aiexportpro" target="_blank" rel="noopener noreferrer">Support via UPI (India)</a>
+            <a href="https://ko-fi.com/aiexportpro" target="_blank" rel="noopener noreferrer">Buy me a Coffee (Global)</a>
+            <a href="privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
         </div>
         <p class="footer-copy" style="margin-top: 24px; font-size: 16px;">© 2026 Ai Export Pro. Built with ❤️ for AI users.</p>
-        <p class="footer-copy" style="margin-top: 10px; font-size: 14px; font-weight: 500; opacity: 0.9;">Support: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hello.aiexportpro@gmail.com&su=Support" target="_blank" style="color: var(--accent); font-weight: 700; text-decoration: none; border-bottom: 2px solid rgba(59, 130, 246, 0.2); padding-bottom: 2px; transition: all 0.3s;">hello.aiexportpro@gmail.com</a></p>
+        <p class="footer-copy" style="margin-top: 10px; font-size: 14px; font-weight: 500; opacity: 0.9;">Support: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hello.aiexportpro@gmail.com&su=Support" target="_blank" rel="noopener noreferrer" style="color: var(--accent); font-weight: 700; text-decoration: none; border-bottom: 2px solid rgba(59, 130, 246, 0.2); padding-bottom: 2px; transition: all 0.3s;">hello.aiexportpro@gmail.com</a></p>
     </footer>
 
     <script src="pricing.js"></script>
